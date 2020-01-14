@@ -5,9 +5,9 @@ library(tidyr)
 library(ggplot2)
 library(viridis)
 
-# ---------------------------
-# User Controls and Constants
-# ---------------------------
+# ---------------------------------
+# User Controls and Initializations
+# ---------------------------------
 
 # Longitude / latitude of lower left / upper right corners of zoomed window
 # around Boston
@@ -32,6 +32,7 @@ stopgrowth <- decimal_date(as.Date("2019-11-01"))
 datebreaks <- seq(2008, 2022, 2)
 # Output plot directory
 plotdir <- "output_plots"
+ifelse(!dir.exists(plotdir), dir.create(plotdir), FALSE)
 # Convert text size in pts to text size in mm
 pts_to_mm = 0.352777
 
