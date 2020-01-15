@@ -22,8 +22,8 @@ This repository requires the following software and data dependencies to be inst
 
 ## Data
 
-* MassGIS [town boundary](https://docs.digital.mass.gov/dataset/massgis-data-community-boundaries-towns-survey-points) GIS shapefiles
 * Zillow seasonally adjusted [house sale prices](https://www.zillow.com/research/data/), aggreagated by city
+* MassGIS [town boundary](https://docs.digital.mass.gov/dataset/massgis-data-community-boundaries-towns-survey-points) GIS shapefiles
 
 # Semi-Reproducible Processing Instructions
 

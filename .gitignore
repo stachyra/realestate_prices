@@ -1,11 +1,6 @@
 # Directories
 data
-output_plots
 sandbox
-
-# Saved plot images
-*.png
-*.svg
 
 # History files
 .Rhistory
