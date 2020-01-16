@@ -10,15 +10,15 @@ This repository requires the following software and data dependencies to be inst
 
 * Basic unix/linux tools: bash, awk, unzip, etc.
 * [R](https://www.r-project.org/) and/or [RStudio](https://rstudio.com/): R language interpreter (required for executing main script)
-* [Tidyverse Core](https://www.tidyverse.org/):
-    - [tidyr](https://tidyr.tidyverse.org/): Tidies (i.e., reorganizes) messy tables
-    - [dplyr](https://dplyr.tidyverse.org/): Manipulates tidy data tables
-    - [ggplot2](https://ggplot2.tidyverse.org/): Plots data
-* Other tidyverse-affiliated R packages:
-    - [lubridate](https://lubridate.tidyverse.org/): Facilitates working with dates in time series data
-    - [sf](https://r-spatial.github.io/sf/index.html): Simple Features package for GIS data sets (aims to be a successor to [sp](https://www.rdocumentation.org/packages/sp/versions/1.3-2))
-    - [plyr](https://www.rdocumentation.org/packages/plyr/versions/1.8.5): Predecessor to dplyr, which still contains some functionality not yet fully replicated in its successor 
-    - [viridis](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html): Provides evenly scaled viridis color palette
+    - [Tidyverse](https://www.tidyverse.org/) core:
+        ▪ [tidyr](https://tidyr.tidyverse.org/): Tidies (i.e., reorganizes into a standard format) arbitrarily formatted tables
+        ▪ [dplyr](https://dplyr.tidyverse.org/): Manipulates tidy-formatted data tables
+        ▪ [ggplot2](https://ggplot2.tidyverse.org/): Plots data
+    - Other tidyverse-affiliated R packages:
+        ▪ [lubridate](https://lubridate.tidyverse.org/): Facilitates working with dates in time series data
+        ▪ [sf](https://r-spatial.github.io/sf/index.html): Simple Features package for GIS data sets (aims to be a successor to [sp](https://www.rdocumentation.org/packages/sp/versions/1.3-2))
+        ▪ [plyr](https://www.rdocumentation.org/packages/plyr/versions/1.8.5): Predecessor to dplyr, which still contains some functionality not yet fully replicated in its successor 
+        ▪ [viridis](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html): Provides evenly scaled viridis color palette
 
 ## Data
 
