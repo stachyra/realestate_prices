@@ -34,7 +34,7 @@ As a somewhat less robust approach that I could apply to the data set that I act
 
 where:
 
-* *P*<sub>0</sub> = Starting price at some arbitrary starting time *t*<sub>0</sub>
+* *P*₀ = Starting price at some arbitrary starting time *t*₀
 * *t* = Time, in years
 * *r* = Annual percentage rate of price growth
 
@@ -42,7 +42,7 @@ Here's an example showing the raw data, with fitted curves superimposed, for thr
 
 ![fit_examples](figures/fit_examples.svg)
 
-Here's a more detailed example showing data and growth rate fit results for a large number of Massachusetts towns and cities (right-click on image to open and zoom):
+Here's a more detailed example showing data and growth rate fit results for a large number of Massachusetts towns and cities (high resolution image; zoom to see details):
 
 ![allfits_typical](figures/allfits_typical.svg)
 
@@ -60,7 +60,7 @@ and here's another map showing average annual price growth rate from Mar 2012 - 
 
 ![Boston_house_price_growth](figures/Boston_house_price_growth.svg)
 
-I also made a pair of similar maps for the entire state of Massachusetts, since it was not much more extra work to do:
+I also made a pair of similar maps for the entire state of Massachusetts, since it was not much more extra work to do.  I recommend opening these in a separate tab, and zooming in about 200-300% to see details.
 
 ![Mass_house_sale_prices](figures/Mass_house_sale_prices.svg)
 
@@ -68,11 +68,11 @@ I also made a pair of similar maps for the entire state of Massachusetts, since 
 
 # Weird Stuff
 
-One unexpected result of these plots was that both prices as well as price growth in Cambridge, MA, a community that I visit frequently and am very familiar with, look much tamer than I had expected.  However, I think may I know what's going on there: in their [methodology](https://www.zillow.com/research/home-sales-methodology-7733/) discussion, Zillow mentions that the house prices in their data sets are a combination of "single family, condominium, and cooperative properties".  This has the result that price comparisons between towns are not as meaningful if the average *mix* of such properties is not constant across locations, because condominiums, which are very common in the Boston area, can be as much as half the price of a single family house in towns with the highest population densities--where land value is at a premium.  In my experience looking at Cambridge real estate ads, a relatively modest (by national standards) single family home there can often cost $1-$2 million dollars, far more costly than these plots would suggest.  And in my experience biking, driving, and walking through Cambridge over the past several years, I've noticed lots of new multi-unit dwellings under construction.  I suspect what's going on here is that as potential buyers are priced out of the single family home market in Cambridge, new condos are being built over time, and these are beginning to account for an increasingly large share of inventory.  As a result, it skews both the prices as well as the price growth rate lower than they would have otherwise been if one were to compare only single family homes, which are still the predominant property type in most communities outside of Cambridge and Boston.  Note that a true Case-Shiller analysis, which proceeds at a much more granular level by analyzing repeat sales data for individual houses, would not be fooled by this type of issue.
+One unexpected result of these plots was that both prices as well as price growth in Cambridge, MA, a community that I visit frequently and am very familiar with, look much tamer than I had expected.  However, I think may I know what's going on there: in their [methodology](https://www.zillow.com/research/home-sales-methodology-7733/) discussion, Zillow mentions that the house prices in their data sets are a combination of "single family, condominium, and cooperative properties".  This has the result that price comparisons between towns are not as meaningful if the average *mix* of such properties is not constant across locations, because condominiums, which are very common in the Boston area, can be as much as half the price of a single family house in towns with the highest population densities -- where land value is at a premium.  In my experience looking at Cambridge real estate ads, a relatively modest (by national standards) single family home there can often cost $1-$2 million dollars, far more costly than these plots would suggest.  And in my experience biking, driving, and walking through Cambridge over the past several years, I've noticed lots of new multi-unit dwellings under construction.  I suspect what's going on here is that as potential buyers are priced out of the single family home market in Cambridge, new condos are being built over time, and these are beginning to account for an increasingly large share of inventory.  As a result, it skews both the prices as well as the price growth rate lower than they would have otherwise been if one were to compare only single family homes, which are still the predominant property type in most communities outside of Cambridge and Boston.  Note that a true Case-Shiller analysis, which proceeds at a much more granular level by analyzing repeat sales data for individual houses, would not be fooled by this type of issue.
 
 # Conclusions
 
-Despite the fact my methodology is not as robust as a true Case-Shiller analysis, nevertheless, for most towns, I still believe it's likely to be reasonably close to a correct.  One unhappy insight is that Arlington, where I now live and which I very much like, seems to have appreciated significantly faster than average: around 7.4% over 7+ years.  The result is that a median-priced house in Arlington, which used to cost a bit over $400,000 in early 2012, now costs more than $700,000--approximately a ~70% price increase.  Having lived in the area during the entire period of price appreciation, I know for a fact that wage gains haven't come anywhere close to that figure during the same period.  As a result, I'm beginning to think it may be safer to buy elsewhere--Arlington looks like it's experiencing a price bubble which in the long term is probably not going to be sustainable.  
+Despite the fact my methodology is not as robust as a true Case-Shiller analysis, nevertheless, for most towns, I still believe it's likely to be reasonably close to a correct.  One unhappy insight is that Arlington, where I now live and which I very much like, seems to have appreciated significantly faster than average: around 7.4% over 7+ years.  The result is that a median-priced house in Arlington, which used to cost a bit over $400,000 in early 2012, now costs more than $700,000 -- approximately a ~70% price increase.  Having lived in the area during the entire period of price appreciation, I know for a fact that wage gains haven't come anywhere close to that figure during the same period.  As a result, I'm beginning to think it may be safer to buy elsewhere: Arlington looks like it's experiencing a price bubble which in the long term is probably not going to be sustainable.  
 
 # Code
 
