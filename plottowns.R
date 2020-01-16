@@ -31,7 +31,7 @@ stopgrowth <- decimal_date(as.Date("2019-11-01"))
 # Date grid lines for time series plots
 datebreaks <- seq(2008, 2022, 2)
 # Output plot directory
-plotdir <- "docs/plots"
+plotdir <- "docs/figures"
 # Convert text size in pts to text size in mm
 pts_to_mm = 0.352777
 

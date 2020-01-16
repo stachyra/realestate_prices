@@ -2,6 +2,8 @@
 title: Boston Metro Area House Prices
 ---
 
+Last revised: Thu, Jan 16, 2020 by [stachyra](https://github.com/stachyra)
+
 # Introduction
 
 I've been thinking a lot lately about the Boston, MA housing market.  As a long-time renter who lives in the area, I'd like to buy a house, preferably sooner rather than later.  However, the most recent Federal Reserve [Case-Shiller index](https://fred.stlouisfed.org/series/BOXRSA) shows a 45% price increase for the seven year period from late 2012 to late 2019, effectively a roughly 5.5% / year annualized rate of growth, compounded annually for seven years in a row.  This statistic worries me, because although the local economy and labor market around here has been robust during most of that period, I don't know anybody who's been regularly receiving 5%-6% annual raises for years on end.  I remember my own salary in 2012, and although it's gone up a bit during that time, it hasn't risen anywhere near 45%.  
@@ -32,37 +34,37 @@ As a somewhat less robust approach that I could apply to the data set that I act
 
 where:
 
-<img src="https://render.githubusercontent.com/render/math?math=P_{0}"> = Starting price at some arbitrary starting time <img src="https://render.githubusercontent.com/render/math?math=t_{0}">
-<img src="https://render.githubusercontent.com/render/math?math=t"> = Time, in years
-<img src="https://render.githubusercontent.com/render/math?math=r"> = Annual percentage rate of price growth
+* *P*<sub>0</sub> = Starting price at some arbitrary starting time *t*<sub>0</sub>
+* *t* = Time, in years
+* *r* = Annual percentage rate of price growth
 
 Here's an example showing the raw data, with fitted curves superimposed, for three arbitrarily selected Boston suburbs:
 
-![fit_examples](plots/fit_examples.svg)
+![fit_examples](figures/fit_examples.svg)
 
 Here's a more detailed example showing data and growth rate fit results for a large number of Massachusetts towns and cities (right-click on image to open and zoom):
 
-![allfits_typical](plots/allfits_typical.svg)
+![allfits_typical](figures/allfits_typical.svg)
 
 And here's another showing the same results for the most expensive locations:
 
-![allfits_expensive](plots/allfits_expensive.svg)
+![allfits_expensive](figures/allfits_expensive.svg)
 
 ## Price Variation Across Geography
 
 To better visualize how house prices and annual growth varied from town to town, I made a series of choropleths maps.  Here's a map showing average house price for several dozen Boston suburbs during the 6 month period from May 2019 - Oct 2019:
 
-![Boston_house_sale_prices](Boston_house_sale_prices.svg)
+![Boston_house_sale_prices](figures/Boston_house_sale_prices.svg)
 
 and here's another map showing average annual price growth rate from Mar 2012 - Oct 2019 (or for shorter periods, in cases where data was not available over the full time range):
 
-![Boston_house_price_growth](Boston_house_price_growth.svg)
+![Boston_house_price_growth](figures/Boston_house_price_growth.svg)
 
 I also made a pair of similar maps for the entire state of Massachusetts, since it was not much more extra work to do:
 
-![Mass_house_sale_prices](Mass_house_sale_prices.svg)
+![Mass_house_sale_prices](figures/Mass_house_sale_prices.svg)
 
-![Mass_house_price_growth](Mass_house_price_growth.svg)
+![Mass_house_price_growth](figures/Mass_house_price_growth.svg)
 
 # Weird Stuff
 

@@ -14,7 +14,7 @@ if [ -f Sale_Prices_City.csv ]
 then
     mv Sale_Prices_City.csv Sale_Prices_City_old.csv
 fi
-wget -N $SALEPRICE_URL
+wget $SALEPRICE_URL
 
 if [ -f Sale_Prices_City_old.csv ]
 then
